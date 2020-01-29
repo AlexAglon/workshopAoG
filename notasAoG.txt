@@ -1,0 +1,23 @@
+creacion de proyecto
+
+-acceder a la liga 
+-apretamos en nuevo proyecto
+-Darle nombre a nuestro proyecto (darle idioma y region)
+
+
+
+modificar mensaje de bienvenida y ver en consola 
+
+    -modificar responses
+
+
+-creacion de intento
+
+    -vamos a la parte de intents
+    -seleccionamos crear nuevo intent 
+        colocamos el nombre que tendra
+    
+    -en training frases son las frases con las que entrenara nuestro action
+    (como podria expresarse nuestro usuario)
+
+    -reconocemos parametros o se los agregamos
