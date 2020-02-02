@@ -1,0 +1,18 @@
+
+const {dialogflow} = require('actions-on-google');
+
+// Importamos funciones de firebase
+const functions = require('firebase-functions');
+
+//instanciamos el cliente de dialogflow
+const app = dialogflow({debug: true});
+
+
+// el intento va recolectar una variable llamada color
+app.intent('color-favorito', (conv, {color}) => {
+    const luckyNumber = color.length;
+    // Respondemos al usuario su numero de la suerte 
+    conv.close('Your lucky number is ' + luckyNumber);
+});
+
+exports.dialogflowFirebaseFulfillment = functions.https.onRequest(app);
